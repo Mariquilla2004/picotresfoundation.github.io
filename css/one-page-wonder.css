@@ -18,6 +18,36 @@ h6 {
   font-weight: 800 !important;
 }
 
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
 .btn-xl {
   text-transform: uppercase;
   padding: 1.5rem 3rem;
@@ -34,32 +64,12 @@ h6 {
   border-radius: 5rem;
 }
 
-.navbar-custom {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.navbar-custom .navbar-brand {
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  font-weight: 700;
-}
-
-.navbar-custom .navbar-nav .nav-item .nav-link {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-}
-
 header.masthead {
   position: relative;
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(0deg, #fdc46d 0%, #f8a220 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -83,7 +93,7 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: linear-gradient(0deg, #ffb324 0%, #f0db81 100%);
 }
 
 header.masthead .bg-circle-1 {
@@ -160,21 +170,12 @@ header.masthead .bg-circle-4 {
 }
 
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
 
 
     @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
     @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
     body {
-		padding: 60px 0px;
+		padding: 0px 0px;
 		background-color: rgb(220, 220, 220);
 	}
     
@@ -273,31 +274,7 @@ header.masthead .bg-circle-4 {
 		color: rgb(30, 30, 30);
 		background-color: rgb(200, 200, 200);
 	}
-	.facebook a,
-	.twitter a,
-	.google-plus a {
-		display: block;
-		width: 100%;
-		color: rgb(75, 110, 168) !important;
-	}
-	.twitter a {
-		color: rgb(79, 213, 248) !important;
-	}
-	.google-plus a {
-		color: rgb(221, 75, 57) !important;
-	}
-	.facebook:hover a {
-		color: rgb(255, 255, 255) !important;
-		background-color: rgb(75, 110, 168) !important;
-	}
-	.twitter:hover a {
-		color: rgb(255, 255, 255) !important;
-		background-color: rgb(79, 213, 248) !important;
-	}
-	.google-plus:hover a {
-		color: rgb(255, 255, 255) !important;
-		background-color: rgb(221, 75, 57) !important;
-	}
+
 
 	@media (min-width: 768px) {
 		.event-list > li {
@@ -361,16 +338,127 @@ header.masthead .bg-circle-4 {
 			width: 40px;
 			padding: 10px 0px 9px;
 		}
+		.bg-image-full {
+			background: no-repeat center center scroll;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-o-background-size: cover;
+		  }
   }
-
-  .bg-image-full {
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
-
-
-
   
+
+/*FOOTER*/
+
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoTwitter:hover {
+  background-color: #1d99ff;
+}
+
+.social-network a.icoInstagram:hover {
+  background-color: #b70089;
+}
+
+.social-network a.icoTwitter:hover i,
+.social-network a.icoInstagram:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
